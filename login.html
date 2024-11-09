@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify Clone</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img width="400" height="400" src="https://imgs.search.brave.com/nRefV5j2g4Af-TxaCO6G99iZqcuPyl7tG2XHQARQMhU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bG9nb2pveS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTgv/MDUvMDExNDI1Mzcv/OF9iaWczNi03Njh4/NTkxLnBuZw" alt="Logo">
+            </div>
+        </nav>
+    </header>
+
+    <div class="auth-form-container">
+        <h2>Login to your account</h2>
+        
+        <!-- Login Form -->
+        <form action="#" method="POST" class="login-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <!-- Button for direct access to the player -->
+        <button onclick="location.href='player.html'" class="player-access-btn">Go to Player</button>
+
+        <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+    </div>
+
+    <footer>
+        <p>Spoon- All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+

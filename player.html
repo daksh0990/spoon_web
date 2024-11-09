@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoon</title>
+
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://imgs.search.brave.com/nRefV5j2g4Af-TxaCO6G99iZqcuPyl7tG2XHQARQMhU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bG9nb2pveS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTgv/MDUvMDExNDI1Mzcv/OF9iaWczNi03Njh4/NTkxLnBuZw" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="player-content">
+        <!-- Player interface with sample content -->
+        <section id="home">
+            <h2>Featured Songs</h2>
+            <div class="songs-list">
+                <!-- Sample Song Card 1 -->
+                <div class="song-card">
+                    <img src="" alt="Song 1">
+                    <p>Saibo</p>
+                    <!-- Audio Element -->
+                    <audio id="audio-1" src="songs\audio-1.mp3"></audio>
+                    <button class="play-btn" onclick="document.getElementById('audio-1').play()">Play</button>
+                    <button class="play-btn" onclick="document.getElementById('audio-1').pause()">pause</button>
+                </div>
+
+                <!-- Sample Song Card 2 -->
+                <div class="song-card">
+                    <img src="" alt="Song 2">
+                    <p>Kasturi</p>
+                    <!-- Audio Element -->
+                    <audio id="audio-2" src="songs\audio-2.mp3"></audio>
+                    <button class="play-btn" onclick="document.getElementById('audio-2').play()">Play</button>
+                    <button class="play-btn" onclick="document.getElementById('audio-2').pause()">pause</button>
+                </div>
+
+                <!-- Sample Song Card 3 -->
+                <div class="song-card">
+                    <img src="" alt="Song 3">
+                    <p>O re piya</p>
+                    <!-- Audio Element -->
+                    <audio id="audio-3" src="songs\audio-3.mp3"></audio>
+                    <button class="play-btn" onclick="document.getElementById('audio-3').play()">Play</button>
+                    <button class="play-btn" onclick="document.getElementById('audio-3').pause()">pause</button>
+                </div>
+
+                <!-- More Song Cards -->
+                <div class="song-card">
+                    <img src="assets/images/song2.jpg" alt="song 4">
+                    <p>Kabhi jo badal barse</p>
+                    <audio id="audio-4" src="songs\audio-4.mp3"></audio>
+                    <button class="play-btn" onclick="document.getElementById('audio-4').play()">Play</button>
+                    <button class="play-btn" onclick="document.getElementById('audio-4').pause()">pause</button>
+                
+                </div>
+                <!-- More Song Cards -->
+                <div class="song-card">
+                    <img src="assets/images/song2.jpg" alt="Song 5">
+                    <p>One love</p>
+                    <audio id="audio-5" src="songs\audio-5.mp3"></audio>
+                    <button class="play-btn" onclick="document.getElementById('audio-5').play()">Play</button>
+                    <button class="play-btn" onclick="document.getElementById('audio-5').pause()">pause</button>
+                </div>
+                <!-- More Song Cards -->
+                <div class="song-card">
+                    <img src="assets/images/song2.jpg" alt="Song 6">
+                    <p>Paradise</p>
+                    <audio id="audio-6" src="assets/music/song4.mp3"></audio>
+                    <button class="play-btn" onclick="document.getElementById('audio-6').play()">Play</button>
+                    <button class="play-btn" onclick="document.getElementById('audio-6').pause()">pause</button>
+                </div>
+                
+                <!-- You can add more song cards similarly... -->
+            </div>
+        </section>
+
+        <!-- Player Controls -->
+        <section id="controls">
+            <p>Now Playing: <span id="now-playing">Song Title 1</span></p>
+            <div class="controls">
+                <button class="prev">Prev</button>
+                <button class="playPause">Play</button>
+                <button class="next">Next</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Spoon - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

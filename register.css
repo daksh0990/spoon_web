@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* Dark background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #181818;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.auth-form-container h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.auth-form-container form {
+    width: 100%;
+}
+
+.auth-form-container label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-top: 10px;
+    display: block;
+}
+
+.auth-form-container input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.auth-form-container input:focus {
+    border-color: #1db954;
+    outline: none;
+}
+
+button {
+    background-color: #1db954; /* Spotify Green */
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1aa34a;
+}
+
+.auth-form-container p {
+    color: #b3b3b3;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.auth-form-container a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-form-container a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #181818;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-form-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .auth-form-container button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-form-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .auth-form-container button {
+        font-size: 1rem;
+        padding: 8px 18px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
